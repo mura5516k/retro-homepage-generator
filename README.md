@@ -66,6 +66,10 @@ Windows では [build.bat](C:\work\retro-homepage-generator\build.bat) でビル
 
 このプロジェクトでは `vite.config.ts` の `base` を `./` にしているため、GitHub Pages 配下でも相対パスで動きやすい構成です。
 
+### GitHub Actions で自動公開する場合
+
+このリポジトリには [deploy-pages.yml](C:\work\retro-homepage-generator\.github\workflows\deploy-pages.yml) を含めています。GitHub 側で Pages の公開元を `GitHub Actions` に切り替えると、`main` ブランチへ push したタイミングで自動デプロイできます。
+
 ### 生成した昔風サイトを公開する場合
 
 1. アプリ上で `ZIPダウンロード` を実行
